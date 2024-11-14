@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.status(200).json({ message: "App is working fine" });
 });
 //endpoints
-app.use('/api/todos', todoRoutes);
+app.use('/api', todoRoutes);
 
 // Connect to MongoDB
 connectDb();
